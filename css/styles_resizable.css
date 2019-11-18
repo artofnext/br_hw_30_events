@@ -1,9 +1,24 @@
 .handle {
     margin: 2px;
-    border-right: 1px solid blue;
-    border-bottom: 1px solid blue;
-    height: 20px;
-    width: 20px;
-    background-color: gray;
-    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid rgb(255, 125, 125);
+    border-left: 20px solid transparent;
+}
+
+.handle:hover {
+    border-bottom: 20px solid red;
+    cursor: se-resize;
+}
+
+#text__container {
+    position: relative;
+}
+
+.text__container {
+    margin: 0 auto;
+    padding: 10px 30px 40px 10px;
 }

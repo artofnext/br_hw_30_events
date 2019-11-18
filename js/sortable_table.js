@@ -48,7 +48,7 @@ function jsonToTable(jsonObj) {
         
         cell.addEventListener('click', sortTable);
         
-        cell.innerText = elem;
+        cell.innerText = elem.replace(/<br>/gi, '');
         header.appendChild(cell);
     }
     table.appendChild(header);
