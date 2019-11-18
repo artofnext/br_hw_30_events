@@ -93,7 +93,10 @@ function sortTable(e) {
             let a = rows[i].getElementsByTagName("TD")[cellIndexToSort].innerText;
             let b = rows[i + 1].getElementsByTagName("TD")[cellIndexToSort].innerText;
 
-            if (a > b) {
+            a = isNaN(Number(a)) ? a : Number(a);
+            b = isNaN(Number(b)) ? b : Number(b);
+
+            if (a < b) {
                 rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                 switchedFlag = true;
             }

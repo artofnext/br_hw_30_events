@@ -8,6 +8,10 @@
     color: gray;
 }
 
+.table__container table {
+    margin: 0 auto;
+}
+
 .table__container tr:nth-child(odd) {
     background-color: rgb(241, 241, 241);
 }
