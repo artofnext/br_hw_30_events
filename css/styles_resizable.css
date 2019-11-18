@@ -1,0 +1,9 @@
+.handle {
+    margin: 2px;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    float: right;
+}
