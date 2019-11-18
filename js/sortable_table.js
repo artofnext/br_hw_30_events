@@ -90,8 +90,8 @@ function sortTable(e) {
         switchedFlag = false;
         for (let i = 1; i < rows.length - 1; i++) {
 
-            let a = rows[i].getElementsByTagName("TD")[cellIndexToSort].innerText;
-            let b = rows[i + 1].getElementsByTagName("TD")[cellIndexToSort].innerText;
+            let a = rows[i].getElementsByTagName("td")[cellIndexToSort].innerText;
+            let b = rows[i + 1].getElementsByTagName("td")[cellIndexToSort].innerText;
 
             a = isNaN(Number(a)) ? a : Number(a);
             b = isNaN(Number(b)) ? b : Number(b);
@@ -115,6 +115,3 @@ let tableContainer = document.getElementById('table__container');
 let tableRendered = jsonToTable(jsonTable);
 
 tableContainer.appendChild(tableRendered);
-
-// console.log(tableRendered);
-
