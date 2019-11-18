@@ -1,0 +1,9 @@
+.table__header {
+    background-color: grey;
+    color: white;
+}
+
+.table__header:hover {
+    background-color: white;
+    color: gray;
+}

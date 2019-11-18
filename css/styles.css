@@ -14,12 +14,13 @@ button {
     text-align: center;
     background-color: white;
     border: 1px solid #24a7ff;
-    border-radius: 3px;
+    border-radius: 20px;
     color: #24a7ff;
     box-shadow: 0 0 5px gray;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 1.5em;
     margin: 20px;
+    transition: all .2s ease-in-out;
 }
 
 button:hover {
@@ -30,7 +31,6 @@ button:hover {
 
 button:active {
     box-shadow: 0 0 3px gray;
-    transition: all .2 e;
 }
 
 .content {

@@ -4,6 +4,10 @@ let jsonTable = tableToJson(table1);
 
 console.log(jsonTable);
 
+let jsonP = document.createElement("p");
+jsonP.innerHTML = jsonTable;
+document.body.appendChild(jsonP);
+
 function tableToJson(table) {
     var data = [];
 
@@ -30,4 +34,6 @@ function tableToJson(table) {
 
     return data;
 }
+
+
 
